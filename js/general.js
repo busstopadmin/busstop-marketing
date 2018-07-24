@@ -154,7 +154,7 @@
       target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        if (target.selector = "#contact-section") {
+        if (target.selector === "#contact-section" && $header.hasClass("show-mobile-menu")) {
           menuWatch();
         }
         $('html,body').animate({
